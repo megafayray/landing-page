@@ -74,6 +74,9 @@ p {
     max-width: 150px;
 }
 
+/* Keep working on this section, it needs::
+ to have the cards and images flex, and
+ include h2 within a larger container that hold everything */
 .foursquares {
     display: flex;
     flex-direction: column;
@@ -85,13 +88,33 @@ h2 {
     font-size: 36px;
     font-weight: bolder;
     color: #1f2937;
+    text-align: center;
+    padding-top: 50px;
 }
 
-/* Keep working on this  */
-.card {
+.foursquares {
     display: flex;
     flex-direction: row;
-    border:#3882f6;
+    gap: 10px;
+    padding-bottom: 50px;
+}
+
+.ugh{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.card {
+    width: 100px;
+}
+
+.foursquares img {
+    width: 100px;
+    align-self: center;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #3882f6;
 }
 
 .greysection {
@@ -133,9 +156,8 @@ h2 {
     font-weight: bold;
     border-radius: 10px;
     padding: 7px 27px;
-    max-width: 100px;
     border-color: white;
-    border-width: 1px;
+    border-width: 2px;
 }
 
 .footer {
